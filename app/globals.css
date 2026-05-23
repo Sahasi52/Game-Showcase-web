@@ -1,0 +1,267 @@
+@import url("https://fonts.cdnfonts.com/css/general-sans");
+
+@import "tailwindcss";
+
+.en-us {
+  font-family: "en-us", sans-serif !important;
+}
+
+.ja-jp {
+  font-family: "ja-jp", sans-serif !important;
+}
+
+.neue-a {
+  font-family: "neue-a", sans-serif !important;
+}
+
+.neue-b {
+  font-family: "neue-b", sans-serif !important;
+}
+
+:root {
+  --purple-100: #e8d6f1;
+  --purple-300: #5724ff;
+  --yellow-300: #edff66;
+  --blue-100: #c4e1e0;
+  --blue-300: #a7c6e7;
+  --red-300: #ffb2a1;
+  --white-100: #dfdff0;
+  --white-300: #f9f6e9;
+  --black-300: #010101;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+html,
+body {
+  font-family: "General Sans", sans-serif;
+  width: 100dvw;
+  background-color: #dfdff0;
+  overflow-x: hidden;
+  cursor:
+    url("/img/zzz_cursor.svg") 0 0,
+    auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@layer base {
+  @font-face {
+    font-family: "en-us";
+    src: url("/fonts/en-us.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "ja-jp";
+    src: url("/fonts/ja-jp.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "neue-a";
+    src: url("/fonts/ZZZNeue-VariantA.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "neue-b";
+    src: url("/fonts/ZZZNeue-VariantB.woff2") format("woff2");
+  }
+}
+
+/* Utilities */
+.border-hsla {
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.floating-nav {
+  background-color: var(--black-300);
+  border-radius: 0.5rem;
+  border: 1px solid var(--black-300);
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mask-clip-path {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.special-font b {
+  font-family: "neue-b", sans-serif;
+  font-feature-settings: "ss01" on;
+}
+
+.start-heading {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 4rem;
+  font-family: "en-us", sans-serif !important;
+}
+
+.info-subtext {
+  position: absolute;
+  top: 115vh;
+  left: 50%;
+  width: 100%;
+  max-width: 25rem;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "ja-jp", sans-serif !important;
+}
+
+.info-image {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: 20;
+  height: 60vh;
+  width: 24rem;
+  transform: translateX(-50%);
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+.animated-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  line-height: 0.8;
+  color: var(--white-100);
+  padding-left: 0;
+  max-width: 70rem;
+}
+
+.animated-word {
+  font-family: "en-us", sans-serif !important;
+  font-weight: 900;
+  opacity: 0;
+  transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
+  transform-origin: 50% 50% -150px !important;
+  will-change: opacity, transform;
+}
+
+.bento-tilt_1 {
+  position: relative;
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  border-radius: 0.375rem;
+  transition: transform 0.3s ease-out;
+}
+
+.bento-tilt_2 {
+  position: relative;
+  grid-column: span 1;
+  grid-row: span 1;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  transition: transform 0.3s ease-out;
+}
+
+.bento-title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "en-us", sans-serif !important;
+}
+
+.story-img-container {
+  position: relative;
+  height: 100dvh;
+  width: 90%;
+  filter: url("#flt_tag");
+}
+
+.story-img-mask {
+  position: absolute;
+  top: -15%;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+  clip-path: polygon(4% 0%, 83% 0%, 100% 73%, 13% 100%);
+  /* clip-path: polygon(10% 10%, 100% 30%, 100% 90%, 5% 100%); */
+}
+
+.story-img-content {
+  position: absolute;
+  width: 100%;
+  height: 100dvh;
+  top: 4rem;
+  left: 2.5rem;
+  opacity: 1;
+  transform: translate3d(0, 0, 0) rotateX(0) rotateY(0) rotateZ(0) scale(1);
+}
+
+.gallery-img-container {
+  width: 16rem;
+  height: 16rem;
+  overflow: hidden;
+  background-color: var(--purple-300);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.gallery-img-4 {
+  width: 25rem;
+  height: 24rem;
+  border-radius: 0.5rem;
+}
+
+.character-clip-path {
+  clip-path: polygon(16% 0, 89% 15%, 75% 100%, 0 97%);
+}
+
+.contact-clip-path-1 {
+  clip-path: polygon(25% 0%, 74% 0, 69% 64%, 34% 73%);
+}
+
+.contact-clip-path-2 {
+  clip-path: polygon(29% 15%, 85% 30%, 50% 100%, 10% 64%);
+}
+
+.indicator-line {
+  height: 0.75rem;
+  width: 2px;
+  border-radius: 9999px;
+  background-color: var(--white-100);
+  transition: all 0.2s ease-in-out;
+}
+
+.indicator-line.active {
+  animation: indicator-line 0.5s ease infinite;
+  animation-delay: calc(var(--animation-order) * 0.1s);
+}
+
+@keyframes indicator-line {
+  0% {
+    height: 4px;
+    transform: translateY(-0px);
+  }
+  50% {
+    height: 16px;
+    transform: translateY(-4px);
+  }
+  100% {
+    height: 4px;
+    transform: translateY(-0px);
+  }
+}
