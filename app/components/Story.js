@@ -68,6 +68,8 @@ const Story = () => {
                   onMouseMove={handleMouseMove}
                   src="/img/Story_Front.webp"
                   alt="front"
+                  width={1000}
+                  height={1000}
                   className="object-contain"
                 />
               </div>
@@ -76,7 +78,7 @@ const Story = () => {
           </div>
         </div>
         <div className="-mt-10 flex w-full justify-center md:-mt-32 md:me-44 md:justify-end">
-          <div className="flex h-full w-fit flex-col items-center md:items-start">
+          <div className="h-full w-fit flex-col items-center md:items-start">
             <p className="-mt-125 md:-mt-100 lg:mt-45 max-w-sm text-center ja-jp text-[var(--purple-100)] md:text-start mix-blend-difference">
               Proxies guide people through dangerous Hollows using advanced
               technology. After losing their AI system, Fairy, they uncover
