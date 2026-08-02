@@ -47,7 +47,9 @@ const Info = () => {
             <Image
               src="/img/Info_Background.webp"
               alt="background"
-              className="absolute left-0 top-0 size-full object-cover"
+              width={1920}
+              height={1080}
+              className="size-full object-cover"
             />
           </div>
         </div>
