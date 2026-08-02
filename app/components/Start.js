@@ -99,8 +99,9 @@ const Start = () => {
         <div className="fixed flex items-end justify-end z-50 h-dvh w-screen overflow-hidden bg-[var(--white-100)]">
           <Image
             src="/img/Bangboo_Net_Loading.webp"
-            alt="Bangboo loading"
-            className="mb-5 mr-5 h-21 w-73"
+            alt="loading_bangboo"
+            width={300}
+            height={300}
           />
         </div>
       )}
@@ -140,6 +141,7 @@ const Start = () => {
             autoPlay
             loop
             muted
+            poster="/img/start-default.webp"
             className="absolute left-0 top-0 size-full object-cover object-center"
             onLoadedData={handleVideoLoad}
           />
