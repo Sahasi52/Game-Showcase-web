@@ -90,7 +90,8 @@ const Start = () => {
     });
   });
 
-  const getVideoSrc = (index) => `/videos/zzz-trailer-${index}.mp4`;
+  // Uncomment the following line when using video files in the public directory.
+  // const getVideoSrc = (index) => `/videos/zzz-trailer-${index}.mp4`;
 
   return (
     <div id="start" className="relative h-dvh w-screen overflow-x-hidden">
@@ -139,7 +140,6 @@ const Start = () => {
           <video
             src={getVideoSrc(currentIndex)}
             poster="/img/start-default.webp"
-            preload="none"
             autoPlay
             loop
             muted
