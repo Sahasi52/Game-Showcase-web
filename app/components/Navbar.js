@@ -63,7 +63,12 @@ const Navbar = () => {
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">
           <div className="flex items-center gap-7">
-            <Image src="/img/Site_Logo.webp" alt="logo" className="w-10" />
+            <Image
+              src="/img/Site_Logo.webp"
+              alt="logo"
+              width={40}
+              height={40}
+            />
             <Button
               id="product-button"
               title="Download"
@@ -95,7 +100,7 @@ const Navbar = () => {
               <audio
                 ref={audioElementRef}
                 className="hidden"
-                src="/audio/Come Alive.mp3"
+                src="/audio/come-alive.mp3"
                 loop
               />
               {[1, 2, 3, 4].map((bar) => (
