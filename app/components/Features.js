@@ -36,11 +36,12 @@ const BentoTilt = ({ children, className = "" }) => {
   );
 };
 
-const BentoCard = ({ src, title, description }) => {
+const BentoCard = ({ src, poster, title, description }) => {
   return (
     <div className="relative size-full">
       <video
         src={src}
+        poster={poster}
         loop
         muted
         autoPlay
