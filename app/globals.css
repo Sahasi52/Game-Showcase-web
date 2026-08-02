@@ -127,8 +127,6 @@ body {
   left: 50%;
   top: 0;
   z-index: 20;
-  height: 60vh;
-  width: 24rem;
   transform: translateX(-50%);
   overflow: hidden;
   border-radius: 1.5rem;
@@ -180,7 +178,6 @@ body {
 }
 
 .story-img-container {
-  position: relative;
   height: 100dvh;
   width: 90%;
   filter: url("#flt_tag");
@@ -199,8 +196,6 @@ body {
 
 .story-img-content {
   position: absolute;
-  width: 100%;
-  height: 100dvh;
   top: 4rem;
   left: 2.5rem;
   opacity: 1;
