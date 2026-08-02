@@ -136,14 +136,25 @@ const Start = () => {
             className="absolute-center invisible absolute z-20 size-64 object-cover object-center"
             onLoadedData={handleVideoLoad}
           />
+          {isLoading && (
+            <Image
+              src="/img/start-default.webp"
+              alt="poster"
+              fill
+              className="absolute inset-0 z-30 object-cover"
+            />
+          )}
+
           <video
             src={getVideoSrc(currentIndex)}
             autoPlay
             loop
             muted
-            poster="/img/start-default.webp"
             className="absolute left-0 top-0 size-full object-cover object-center"
-            onLoadedData={handleVideoLoad}
+            onLoadedData={() => {
+              handleVideoLoad();
+              setIsLoading(false);
+            }}
           />
         </div>
         <h1 className="special-font start-heading absolute bottom-5 right-5 z-40 text-[var(--white-100)]">
