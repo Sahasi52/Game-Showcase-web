@@ -76,6 +76,7 @@ const Features = () => {
         </div>
         <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
           <BentoCard
+            poster="/img/cutscene-1-default.webp"
             src="/videos/zzz-cutscene-1.mp4"
             title={
               <>
@@ -88,6 +89,7 @@ const Features = () => {
         <div className="grid h-[135vh] grid-cols-2 grid-rows-3 gap-7">
           <BentoTilt className="bento-tilt_1 col-span-2 row-span-1 md:col-span-1 md:row-span-2">
             <BentoCard
+              poster="/img/agent-default.webp"
               src="/videos/zzz-agent.mp4"
               title={
                 <>
@@ -99,6 +101,7 @@ const Features = () => {
           </BentoTilt>
           <BentoTilt className="bento-tilt_1 col-span-2 row-span-1 ms-32 md:col-span-1 md:ms-0">
             <BentoCard
+              poster="/img/wengine-default.webp"
               src="/videos/zzz-wengine.mp4"
               title={
                 <>
@@ -110,6 +113,7 @@ const Features = () => {
           </BentoTilt>
           <BentoTilt className="bento-tilt_1 col-span-2 me-14 md:col-span-1 md:me-0">
             <BentoCard
+              poster="/img/bangboo-default.webp"
               src="/videos/zzz-bangboo.mp4"
               title={
                 <>
@@ -129,6 +133,7 @@ const Features = () => {
           </BentoTilt>
           <BentoTilt className="bento-tilt_2">
             <video
+              poster="/img/cutscene-2-default.webp"
               src="/videos/zzz-cutscene-2.mp4"
               loop
               muted
