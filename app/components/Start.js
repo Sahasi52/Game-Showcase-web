@@ -90,8 +90,7 @@ const Start = () => {
     });
   });
 
-  // Uncomment the following line when using video files in the public directory.
-  // const getVideoSrc = (index) => `/videos/zzz-trailer-${index}.mp4`;
+  const getVideoSrc = (index) => `/videos/zzz-trailer-${index}.mp4`;
 
   return (
     <div id="start" className="relative h-dvh w-screen overflow-x-hidden">
@@ -121,6 +120,7 @@ const Start = () => {
               <video
                 ref={nextVideoRef}
                 src={getVideoSrc(upcomingVideoIndex)}
+                poster="/img/start-default.webp"
                 loop
                 muted
                 id="current-video"
@@ -131,6 +131,7 @@ const Start = () => {
           <video
             ref={nextVideoRef}
             src={getVideoSrc(currentIndex)}
+            poster="/img/start-default.webp"
             loop
             muted
             id="next-video"
