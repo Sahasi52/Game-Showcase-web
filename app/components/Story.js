@@ -48,7 +48,7 @@ const Story = () => {
       className="min-h-dvh w-screen bg-[var(--black-300)] text-[var(--blue-100)]"
     >
       <div className="flex size-full flex-col items-center py-10 pb-24">
-        <p className="ja-jp text-sm uppercase md:text-[10px]">
+        <p className="ja-jp text-sm uppercase md:text-[10px] z-10">
           A World Beyond the Hollows
         </p>
         <div className="relative size-full pl-30">
