@@ -49,7 +49,7 @@ const Info = () => {
               alt="background"
               width={1920}
               height={1080}
-              className="size-full object-cover"
+              className="sticky size-full object-cover"
             />
           </div>
         </div>
