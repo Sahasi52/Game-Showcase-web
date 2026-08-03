@@ -135,7 +135,7 @@ body {
 
 @media (max-width: 768px) {
   .info-image {
-    width: 50%;
+    width: 30%;
     height: 50%;
   }
 }
