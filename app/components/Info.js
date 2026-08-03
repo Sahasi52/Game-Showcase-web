@@ -43,13 +43,13 @@ const Info = () => {
           <p>As a Proxy, you fight unknown threats and uncover secrets.</p>
         </div>
         <div className="h-dvh w-screen" id="clip">
-          <div className="mask-clip-path info-image">
+          <div className="mask-clip-path info-image relative">
             <Image
               src="/img/Info_Background.webp"
               alt="background"
-              width={1920}
-              height={1080}
-              className="top-0 left-0 size-full object-cover"
+              fill
+              priority
+              className="object-cover"
             />
           </div>
         </div>
