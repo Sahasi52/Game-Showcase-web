@@ -49,6 +49,7 @@ const Info = () => {
               alt="background"
               width={1920}
               height={1080}
+              className="top-0 left-0 size-full object-cover"
             />
           </div>
         </div>
