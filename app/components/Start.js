@@ -120,7 +120,6 @@ const Start = () => {
               <video
                 ref={nextVideoRef}
                 src={getVideoSrc(upcomingVideoIndex)}
-                poster="/img/start-default.webp"
                 loop
                 muted
                 id="current-video"
@@ -131,7 +130,6 @@ const Start = () => {
           <video
             ref={nextVideoRef}
             src={getVideoSrc(currentIndex)}
-            poster="/img/start-default.webp"
             loop
             muted
             id="next-video"
