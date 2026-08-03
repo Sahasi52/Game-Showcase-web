@@ -70,7 +70,6 @@ const Story = () => {
                   alt="front"
                   width={1000}
                   height={1000}
-                  className="object-contain"
                 />
               </div>
             </div>
